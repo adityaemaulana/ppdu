@@ -124,12 +124,33 @@
     border-radius: 8%
   }
 
+  .card-feature .card-img1-hover,
+  .card-feature .card-img2-hover,
+  .card-feature .card-img3-hover,
+  .card-feature .card-img4-hover {
+    display: none;
+  }
+  
   .card-feature:hover {
     background-color: #0D5EAD;
   }
 
   .card-feature:hover p {
     color: #FFFFFF;
+  }
+
+  .card-feature:hover .card-img1-hover,
+  .card-feature:hover .card-img2-hover,
+  .card-feature:hover .card-img3-hover,
+  .card-feature:hover .card-img4-hover {
+    display: inline;
+  }
+
+  .card-feature:hover .card-img1,
+  .card-feature:hover .card-img2,
+  .card-feature:hover .card-img3,
+  .card-feature:hover .card-img4 {
+    display: none;
   }
 
   .feature-text {
