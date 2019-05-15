@@ -131,6 +131,18 @@
     margin-top: 10%; 
   }
 
+  .dropdown-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .dropdown-btn {
+    background: none;
+    color: #545454;
+    box-shadow: 2px 2px 10px 0 rgba(84, 84, 84, 0.2);
+    width: 100%;
+  }
+
   .feature-list-container {
     padding: 20%;
     margin: 10%;
