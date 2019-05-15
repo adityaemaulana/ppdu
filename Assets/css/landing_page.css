@@ -124,6 +124,14 @@
     border-radius: 8%
   }
 
+  .card-feature:hover {
+    background-color: #0D5EAD;
+  }
+
+  .card-feature:hover p {
+    color: #FFFFFF;
+  }
+
   .feature-text {
     color: #545454;
     font-size: 22px;
