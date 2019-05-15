@@ -82,11 +82,11 @@
   }
 
   #cardCarousel .carousel-control-prev {
-    margin-left: -8%;
+    margin-left: -6%;
   }
 
   #cardCarousel .carousel-control-next {
-    margin-right: -8%;
+    margin-right: -6%;
   }
 
   .carousel-control-prev-icon.light-carousel-control {

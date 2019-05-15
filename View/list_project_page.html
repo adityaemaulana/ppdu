@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+  <title>List Project | Kementrian Keuangan Republik Indonesia</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../Assets/icon/logo-kemenkeu.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <link rel="stylesheet" href="../Assets/css/list_project_page.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body ng-app="">
+  <div ng-include="'header.html'"></div>
+
+  <div class="mb-5" style="padding: 5%">
+    <p class="mb-5 title-text">List Proyek</p>
+
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-md-2 px-4">
+          <div class="dropdown">
+            <button class="dropdown-btn btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-text float-left">By Sector</a>
+              <img class="float-right" src="../Assets/icon/dropdown.svg" alt="dropdown icon" style="width: 20px; height: 20px">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 px-4">
+          <div class="dropdown">
+            <button class="dropdown-btn btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-text float-left">By Region</a>
+              <img class="float-right" src="../Assets/icon/dropdown.svg" alt="dropdown icon" style="width: 20px; height: 20px">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 px-4">
+          <div class="dropdown">
+            <button class="dropdown-btn btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-text float-left">By Project Status</a>
+              <img class="float-right" src="../Assets/icon/dropdown.svg" alt="dropdown icon" style="width: 20px; height: 20px">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 px-4">
+          <div class="dropdown">
+            <button class="dropdown-btn btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-text float-left">By Project Value</a>
+              <img class="float-right" src="../Assets/icon/dropdown.svg" alt="dropdown icon" style="width: 20px; height: 20px">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mb-5">
+      <div class="row">
+          <div class="col-md-4 px-4">
+            <div class="card card-container">
+              <div class="card-img-top" style="position: relative;">
+                  <img class="card-img" src="../Assets/gallery1.jpg" alt="Card image cap">
+                  <div class="card-thumbnail">
+                    <a>Transportasi Medan</a>
+                  </div>
+              </div>
+              <div class="card-body">
+                <div class="px-4 py-1 mb-3 card-chip" style="background-color: #F7444E;">
+                    <a class="card-chip-text text-center">Penyiapan</a>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-4">
+                    <p class="card-text-label">Nilai Proyek</p>
+                    <p class="card-text-label">Sektor</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p class="card-text-value">Rp 15 Billion</p>
+                    <p class="card-text-value">Transportasi</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="row">
+                    <div class="col-md-12 card-place">
+                      <img src="../Assets/icon/maps-and-flags.svg" alt="icon" style="width: 20px; height: 20px">
+                      <a>Medan, Sumatera Utara</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 px-4">
+            <div class="card card-container">
+              <div class="card-img-top" style="position: relative;">
+                  <img class="card-img" src="../Assets/gallery1.jpg" alt="Card image cap">
+                  <div class="card-thumbnail">
+                    <a>Jalan Tol Jakarta Cikampe II Elevated</a>
+                  </div>
+              </div>
+              <div class="card-body">
+                <div class="px-4 py-1 mb-3 card-chip" style="background-color: #8186D6">
+                    <a class="card-chip-text text-center">Konstruksi</a>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-4">
+                    <p class="card-text-label">Nilai Proyek</p>
+                    <p class="card-text-label">Sektor</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p class="card-text-value">Rp 16,4 Billion</p>
+                    <p class="card-text-value">Jalan</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="row">
+                    <div class="col-md-12 card-place">
+                      <img src="../Assets/icon/maps-and-flags.svg" alt="icon" style="width: 20px; height: 20px">
+                      <a>Kota Bekasi, Jawa Barat</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 px-4">
+            <div class="card card-container">
+              <div class="card-img-top" style="position: relative;">
+                  <img class="card-img" src="../Assets/gallery1.jpg" alt="Card image cap">
+                  <div class="card-thumbnail">
+                    <a>Bandara Hang Nadim</a>
+                  </div>
+              </div>
+              <div class="card-body">
+                <div class="px-4 py-1 mb-3 card-chip" style="background-color: #F7444E;">
+                    <a class="text-center">Penyiapan</a>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-4">
+                    <p class="card-text-label">Nilai Proyek</p>
+                    <p class="card-text-label">Sektor</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p class="card-text-value">Rp 3,5 Billion</p>
+                    <p class="card-text-value">Transportasi</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="row">
+                    <div class="col-md-12 card-place">
+                      <img src="../Assets/icon/maps-and-flags.svg" alt="icon" style="width: 20px; height: 20px">
+                      <a>Batam, Kepulauan Riau</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+          <nav class="justify-content-center" aria-label="Page navigation example" > 
+              <ul class=" mx-auto pagination">
+                <li class="page-item px-2"><a style="border-radius: 100%" class="page-link" href="#">1</a></li>
+                <li class="page-item px-2"><a style="border-radius: 100%" class="page-link" href="#">2</a></li>
+                <li class="page-item px-2"><a style="border-radius: 100%" class="page-link" href="#">3</a></li>
+              </ul>
+            </nav>
+      </div>
+    </div>
+  </div>
+  
+  <div ng-include="'footer.html'"></div>
+</body>
+</html> 
