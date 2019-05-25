@@ -2,3 +2,9 @@
   display: inline;
 }
 
+.nav-link {
+  font-size: 14px;
+  color: #545454;
+  font-weight: bold;
+  font-family: 'Montserrat'
+}
