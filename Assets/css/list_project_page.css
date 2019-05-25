@@ -6,6 +6,12 @@
   padding-left: 3%;
 }
 
+.dropdown-label {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  color: #545454;
+  font-weight: 600;
+}
 .dropdown-icon {
   width: 16px;
 }
