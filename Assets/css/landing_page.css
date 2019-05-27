@@ -121,7 +121,8 @@
   .card-feature {
     box-shadow: 0 0 8px rgba(84, 84, 84, 0.2);
     height: 100%;
-    border-radius: 8%
+    border-radius: 20px;
+    flex-grow: 1;
   }
 
   .card-feature .card-img1-hover,
@@ -155,7 +156,7 @@
 
   .feature-text {
     color: #545454;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 10%; 
   }
