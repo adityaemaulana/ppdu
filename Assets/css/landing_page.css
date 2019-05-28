@@ -120,8 +120,8 @@
 
   .card-feature {
     box-shadow: 0 0 8px rgba(84, 84, 84, 0.2);
-    height: 100%;
-    border-radius: 8%
+    border-radius: 20px;
+    flex-grow: 1;
   }
 
   .card-feature .card-img1-hover,
@@ -155,7 +155,7 @@
 
   .feature-text {
     color: #545454;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 10%; 
   }
@@ -189,5 +189,10 @@
     padding: 5%;
     border-radius: 100%;
     box-shadow: 2px 2px 10px 0 rgba(84, 84, 84, 0.2);
+  }
+
+  .position-list-container {
+    border-radius: 10px;
+    border: 2px solid #545454;
   }
 }
