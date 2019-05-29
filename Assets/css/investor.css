@@ -4,6 +4,12 @@
     font-weight: 600;
 }
 
+.text-header {
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
 .content-text {
     color: #545454;
     font-size: 14px;
