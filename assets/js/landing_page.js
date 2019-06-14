@@ -4,7 +4,7 @@ $(document).ready(function() {
     var idx = $e.index();
     var itemsPerSlide = 4;
     var totalItems = $("#cardCarousel .carousel-item").length;
-    console.log(totalItems); 
+    // console.log(totalItems);
 
     if (idx >= totalItems - (itemsPerSlide - 1)) {
       var it = itemsPerSlide - (totalItems - idx);
