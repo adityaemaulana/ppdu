@@ -1,0 +1,44 @@
+.title-text {
+    color: #545454;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text-header {
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.content-text {
+    color: #545454;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.page-link {
+    border-radius: 100% !important; 
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.list-project-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(84, 84, 84, 0.2);
+}
+
+.list-group-item-last {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}

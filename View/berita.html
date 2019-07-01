@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+  <title>Berita | Kementrian Keuangan Republik Indonesia</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../Assets/icon/logo-kemenkeu.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <link rel="stylesheet" href="../Assets/css/dukungan_pemerintah.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <style>
+    .title-text {
+      color: #545454;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .card-container {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 0px 8px 0 rgba(84, 84, 84, 0.2);
+    }
+
+    .card-img {
+      height: 180px;
+      width: 100%;
+    }
+
+    .card-thumbnail {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding-left: 6%;
+      padding-right: 6%;
+      padding-bottom: 3%;
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .thumbnail-title {
+      font-size: 22px;
+      color: #FFFFFF;
+      font-family: 'Robotto', sans-serif;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .thumbnail-date {
+      font-size: 16px;
+      color: #FFFFFF;
+      font-family: 'Robotto', sans-serif;
+      font-weight: normal;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<div ng-include="'header.html'"></div>
+
+<body ng-app="">
+  <div style="padding: 4% 5% 4% 5%">
+    <p class="pl-5 mb-4 title-text">Berita</p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 px-2 my-3">
+          <a href="berita_detail.html">
+            <div class="card-container">
+              <div class="card-img" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), #ffdf92);"></div>
+              <div class="card-thumbnail">
+                <p class="thumbnail-title">Judul Berita</p>
+                <p class="thumbnail-date">24 May 2019</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 px-2 my-3">
+          <a href="berita_detail.html">
+            <div class="card-container">
+              <div class="card-img" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), #ffb7b7);"></div>
+              <div class="card-thumbnail">
+                <p class="thumbnail-title">Judul Berita</p>
+                <p class="thumbnail-date">25 May 2019</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 px-2 my-3">
+          <a href="berita_detail.html">
+            <div class="card-container">
+              <div class="card-img" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), #b6f2ff);"></div>
+              <div class="card-thumbnail">
+                <p class="thumbnail-title">Judul Berita</p>
+                <p class="thumbnail-date">26 May 2019</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 px-2 my-3">
+          <a href="berita_detail.html">
+            <div class="card-container">
+              <div class="card-img" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), #fac5ff);"></div>
+              <div class="card-thumbnail">
+                <p class="thumbnail-title">Judul Berita</p>
+                <p class="thumbnail-date">27 May 2019</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 px-2 my-3">
+          <a href="berita_detail.html">
+            <div class="card-container">
+              <div class="card-img" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), #b6f2ff);"></div>
+              <div class="card-thumbnail">
+                <p class="thumbnail-title">Judul Berita</p>
+                <p class="thumbnail-date">28 May 2019</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 px-2 my-3">
+          <a href="berita_detail.html">
+            <div class="card-container">
+              <div class="card-img" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), #ffdf92);"></div>
+              <div class="card-thumbnail">
+                <p class="thumbnail-title">Judul Berita</p>
+                <p class="thumbnail-date">29 May 2019</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-3">
+      <div class="row justify-content-center">
+          <nav class="justify-content-center" aria-label="Page navigation example" > 
+              <ul class=" mx-auto pagination">
+                <li class="page-item px-2 active"><a style="border-radius: 100%" class="page-link" href="#">1</a></li>
+                <li class="page-item px-2"><a style="border-radius: 100%" class="page-link" href="#">2</a></li>
+                <li class="page-item px-2"><a style="border-radius: 100%" class="page-link" href="#">3</a></li>
+              </ul>
+            </nav>
+      </div>
+    </div>
+  </div>
+</body>
+
+<div ng-include="'footer.html'"></div>
+
+</html> 
