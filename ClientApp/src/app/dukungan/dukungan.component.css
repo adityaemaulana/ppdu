@@ -1,0 +1,20 @@
+.title-text {
+  color: #545454;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.video-container {
+  background-color: #ffdf92;
+  width: 800px;
+  height: 450px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.text-content {
+  font-size: 14px;
+  color: #545454;
+  font-family: 'Robotto', sans-serif;
+  text-align: justify;
+}

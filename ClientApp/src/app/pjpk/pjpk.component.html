@@ -1,0 +1,28 @@
+<div class="mb-5" style="padding: 5%">
+  <p class="title-text pl-3">Untuk PJPK</p>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 pr-2">
+        <div class="list-group" style="box-shadow: 2px 2px 10px 0 rgba(84, 84, 84, 0.2);">
+          <a class="list-group-item list-group-item-action" [ngClass]="{'active': i === index}" (click)="changeIndex(i)" *ngFor="let d of data, index as i">
+            {{d.judul}}
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-md-9 px-2">
+        <div class="p-4" style="box-shadow: 2px 2px 10px 0 rgba(84, 84, 84, 0.2);">
+          <div class="rounded mb-4" style="overflow: hidden">
+            <img class="w-100" src="{{data[index].img}}" alt="image">
+          </div>
+          
+          <p class="title-text">{{data[index].judul}}</p>
+
+          <p class="content-text">{{data[index].isi}}</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

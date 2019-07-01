@@ -1,0 +1,136 @@
+<div class="mb-5" style="padding: 2% 5% 2% 5%">
+  <p class="mb-5 title-text">List Proyek</p>
+
+  <!-- Dropdown -->
+  <div class="container-fluid mb-4">
+    <div class="row">
+      <div class="col-md-2 px-4">
+        <a class="dropdown-label">Sector</a>
+        <div class="dropdown mt-2">
+          <button class="dropdown-btn btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="dropdown-text float-left">Sector</a>
+            <img class="dropdown-icon float-right" src="assets/icon/dropdown.svg" alt="dropdown icon">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 px-4">
+        <a class="dropdown-label">Region</a>
+        <div class="dropdown mt-2">
+          <button class="dropdown-btn btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="dropdown-text float-left">Region</a>
+            <img class="dropdown-icon float-right" src="assets/icon/dropdown.svg" alt="dropdown icon">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 px-4">
+        <a class="dropdown-label">Project Status</a>
+        <div class="dropdown mt-2">
+          <button class="dropdown-btn btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="dropdown-text float-left">Project Status</a>
+            <img class="dropdown-icon float-right" src="assets/icon/dropdown.svg" alt="dropdown icon">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 px-4">
+        <a class="dropdown-label">Project Value</a>
+        <div class="dropdown mt-2">
+          <button class="dropdown-btn btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="dropdown-text float-left">Project Value</a>
+            <img class="dropdown-icon float-right" src="assets/icon/dropdown.svg" alt="dropdown icon">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-7 float-right px-4">
+          <a class="dropdown-label">Sort By</a>
+          <div class="dropdown mt-2">
+            <button class="dropdown-btn btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-text float-left">Alphabet</a>
+              <img class="dropdown-icon float-right" src="assets/icon/dropdown.svg" alt="dropdown icon">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of Dropdown -->
+
+  <!-- Project list -->
+  <div class="container-fluid mb-5">
+    <div class="row">
+      <div class="col-md-4 px-4" *ngFor="let p of currentData">
+        <a routerLink="/project_detail">
+          <div class="card card-container">
+            <div class="card-img-top" style="position: relative;">
+                <img class="card-img" src="{{p.image}}" alt="Card image cap">
+                <div class="card-thumbnail">
+                  <a>{{p.name}}</a>
+                </div>
+            </div>
+            <div class="card-body">
+              <div class="px-4 py-1 mb-3 card-chip" style="background-color: #F7444E;">
+                  <a class="card-chip-text text-center">{{p.status}}</a>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-5">
+                  <p class="card-text-label">Nilai Proyek</p>
+                  <p class="card-text-label">Sektor</p>
+                </div>
+                <div class="col-md-7">
+                  <p class="card-text-value">{{p.nilai}}</p>
+                  <p class="card-text-value">{{p.sektor}}</p>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-md-12 card-place">
+                    <img src="assets/icon/maps-and-flags.svg" alt="icon" style="width: 20px; height: 20px">
+                    <a>{{p.lokasi}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end of Project list -->
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+        <nav class="justify-content-center" aria-label="Page navigation example" > 
+          <ul class=" mx-auto pagination">
+            <li class="page-item px-2" (click)="updateData(i)" [ngClass]="{'active': currentIdx === i}" *ngFor="let i of pageNumbers, index as i">
+              <a class="page-link">{{i+1}}</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+  </div>
+</div>

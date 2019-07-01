@@ -1,0 +1,6 @@
+/* For page-transition animation */
+router-outlet ~ * {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}

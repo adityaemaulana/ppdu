@@ -1,0 +1,27 @@
+<div style="padding: 5%">
+  <p class="mb-4 title-text">Peraturan</p>
+  
+  <div class="p-3">
+    <div class="container card-container mb-5 py-3 px-4" *ngFor="let p of peraturan">
+      <div class="row">
+        <div class="col-md-10">
+          <p class="card-title mb-3">{{p.judul}}</p>
+          <p class="card-content mb-3">{{p.isi}}</p>
+          <div class="card-tag">
+            <span *ngFor="let tag of p.tag, last as l">
+              <a class="mr-2">{{tag}}</a>
+              <span class="mr-2 card-tag-divider" *ngIf="!l"></span>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-2 icon-container">
+          <div class="icon-img-container">
+            <a href="{{p.url}" download style="flex-grow: 1">
+              <img src="assets/icon/download.svg" class="p-4" style="width: 100%;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
